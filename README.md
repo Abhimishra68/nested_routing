@@ -88,12 +88,6 @@ Nested routes (`men`, `women`) are declared **inside the Product route**, which 
    npm run dev
    ```
 
-## 📌 Best Practices Followed
-
-* Used `NavLink` instead of `<a>` tags
-* Implemented nested routing properly
-* Centralized layout components
-* Clean and readable code
 
 ## 📄 License
 
