@@ -1,3 +1,7 @@
+Sure 👍
+Here is the **recreated and updated README.md**, now **including your Navbar implementation with `NavLink`** and explaining active routing clearly.
+
+---
 
 # React Nested Routing App
 
@@ -88,18 +92,17 @@ Nested routes (`men`, `women`) are declared **inside the Product route**, which 
    npm run dev
    ```
 
+## 📌 Best Practices Followed
+
+* Used `NavLink` instead of `<a>` tags
+* Implemented nested routing properly
+* Centralized layout components
+* Clean and readable code
 
 ## 📄 License
 
 This project is open-source and intended for learning and practice.
 
 ---
-<img width="1863" height="875" alt="Screenshot 2026-01-04 111414" src="https://github.com/user-attachments/assets/2905707d-612a-4b9c-afa1-269c9fcd793b" />
 
-
-* Add **active link styling example**
-* Shorten this README
-* Make it **resume / portfolio ready**
-* Add **deployment steps (Vercel / Netlify)**
-
-Just tell me 👌
+<img width="1863" height="875" alt="Screenshot 2026-01-04 111414" src="https://github.com/user-attachments/assets/1a687cd2-31d3-40f5-8fb7-3f1a3a35c8a7" />
