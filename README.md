@@ -1,7 +1,4 @@
-Sure 👍
-Here is the **recreated and updated README.md**, now **including your Navbar implementation with `NavLink`** and explaining active routing clearly.
 
----
 
 # React Nested Routing App
 
