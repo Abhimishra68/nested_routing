@@ -1,16 +1,111 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Nested Routing App
 
-Currently, two official plugins are available:
+A React application demonstrating **client-side routing and nested routing** using **React Router v6**. The app uses `NavLink` for navigation with an active route system and a shared layout using Navbar and Footer components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* React Router v6 for navigation
+* `NavLink` for active route styling
+* Nested routing inside Product page
+* Reusable Navbar and Footer
+* 404 page handling
+* Clean and scalable folder structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+```
+src/
+│── components/
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+│
+│── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Product.jsx
+│   ├── Men.jsx
+│   ├── Women.jsx
+│   ├── Nestedroute.jsx
+│   └── Note.jsx
+│
+│── App.jsx
+│── main.jsx
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧭 Navbar Navigation
+
+The Navbar uses **`NavLink`** from `react-router-dom` instead of traditional anchor tags to enable SPA navigation without page reload.
+
+```jsx
+<NavLink to="/">Home</NavLink>
+<NavLink to="/about">About</NavLink>
+<NavLink to="/product">Product</NavLink>
+```
+
+### Why `NavLink`?
+
+* Prevents full page reload
+* Allows active link styling
+* Better UX and performance
+
+## 🛣️ Routes Overview
+
+| Path             | Component       |
+| ---------------- | --------------- |
+| `/`              | Home            |
+| `/about`         | About           |
+| `/product`       | Product         |
+| `/product/men`   | Men             |
+| `/product/women` | Women           |
+| `*`              | Note (404 Page) |
+
+Nested routes (`men`, `women`) are declared **inside the Product route**, which is the recommended approach.
+
+## 🧩 Technologies Used
+
+* React
+* React Router DOM v6
+* Tailwind CSS
+
+## ▶️ How to Run the Project
+
+1. Clone the repository
+
+   ```bash
+   git clone <your-repo-url>
+   ```
+
+2. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+
+   ```bash
+   npm run dev
+   ```
+
+## 📌 Best Practices Followed
+
+* Used `NavLink` instead of `<a>` tags
+* Implemented nested routing properly
+* Centralized layout components
+* Clean and readable code
+
+## 📄 License
+
+This project is open-source and intended for learning and practice.
+
+---
+<img width="1863" height="875" alt="Screenshot 2026-01-04 111414" src="https://github.com/user-attachments/assets/2905707d-612a-4b9c-afa1-269c9fcd793b" />
+
+
+* Add **active link styling example**
+* Shorten this README
+* Make it **resume / portfolio ready**
+* Add **deployment steps (Vercel / Netlify)**
+
+Just tell me 👌
